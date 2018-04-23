@@ -1,5 +1,5 @@
 <h2  align="center">Fast-Fingers-Auto-Typer</h2>
-<p  align="center">A python application that auto-types the word per minute test of https://10fastfingers.com/typing-test/english</p>
+<p  align="center">A python application that auto-types the word per minute test on https://10fastfingers.com/typing-test/english</p>
 
 <br/>
 
