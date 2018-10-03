@@ -1,16 +1,13 @@
-from selenium import webdriver;
+from selenium import webdriver
 
 def start_typing(driver):
-    inputField = driver.find_element_by_id("inputfield");
+    inputField = driver.find_element_by_id("inputfield")
 
-    for i in range(345):
-        try:
-            text = driver.find_element_by_xpath("//span[@wordnr='" + str(i) + "']").text
-            inputField.send_keys(text)
-            inputField.send_keys(" ")
-        except:
-            print("Done")
-            break
+    words= driver.find_element_by_id('words')
+    for i in words.find_elements_by_tag_name('span'):
+        word=str(i.get_attribute('innerHTML'))
+        inputField.send_keys(word)
+        inputField.send_keys(' ')
 
 if __name__ == '__main__':
     driver = webdriver.Chrome('./drivers/chromedriver.exe')
