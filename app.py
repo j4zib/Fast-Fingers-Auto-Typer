@@ -15,3 +15,15 @@ if __name__ == '__main__':
     driver.get("https://10fastfingers.com/typing-test/english")
 
     start_typing(driver)
+    script=int(input("RATE YOUR EXPERIANCE FROM 1-5 : "))
+print()
+if (script == 1 ):
+    print("we will try to imporve please tell us where are we lacking behind")
+if (script == 2 ):
+    print("we will try to imporve please tell us where are we lacking behind")
+if (script == 3):
+    print("thankyou have nice day ")
+if (script == 4 ):
+    print("i am glat you had a great experian thank you so much")
+if (script == 5 ):
+    print("i am glat you had a great experian thank you so much")
